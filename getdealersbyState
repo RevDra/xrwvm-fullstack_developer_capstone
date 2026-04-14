@@ -1,0 +1,22 @@
+curl -X GET http://localhost:8000/djangoapp/get_dealers/Kansas
+
+[
+  {
+    "id": 1,
+    "city": "Topeka",
+    "state": "Kansas",
+    "st": "KS",
+    "address": "123 Sunflower Lane",
+    "zip": "66601",
+    "full_name": "Kansas City Toyota"
+  },
+  {
+    "id": 2,
+    "city": "Wichita",
+    "state": "Kansas",
+    "st": "KS",
+    "address": "456 Wheat St",
+    "zip": "67201",
+    "full_name": "Wichita Motors"
+  }
+]

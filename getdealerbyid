@@ -1,0 +1,11 @@
+curl -X GET http://localhost:8000/djangoapp/dealer/1
+
+{
+  "id": 1,
+  "city": "Topeka",
+  "state": "Kansas",
+  "st": "KS",
+  "address": "123 Sunflower Lane",
+  "zip": "66601",
+  "full_name": "Kansas City Toyota"
+}

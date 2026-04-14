@@ -1,0 +1,21 @@
+Run actions/checkout@v3
+  with:
+    repository: user/cars-dealership
+    token: ***
+    fetch-depth: 1
+...
+Run actions/setup-python@v4
+...
+Run python -m pip install --upgrade pip
+...
+Run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+0
+...
+Run actions/setup-node@v3
+...
+Run cd server/frontend
+...
+Run npm run build --if-present
+
+Successfully built the application!
+All steps completed successfully.

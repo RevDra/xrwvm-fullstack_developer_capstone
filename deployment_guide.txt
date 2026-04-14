@@ -1,0 +1,26 @@
+PHASE 3: Deployment Instructions for IBM Cloud Code Engine
+
+1. Containerize the Applications:
+   - Create a Dockerfile for each service (Django, Node.js, Flask).
+   - Build and push the Docker images to IBM Cloud Container Registry (ICR).
+     Example: `docker build -t us.icr.io/cars-dealership/django-app:v1 .`
+     Example: `docker push us.icr.io/cars-dealership/django-app:v1`
+
+2. Provision IBM Cloud Code Engine:
+   - Log in via IBM Cloud CLI: `ibmcloud login`
+   - Target your resource group and region.
+   - Create/Select a Code Engine project: `ibmcloud ce project create --name dealership-project`
+
+3. Deploy Microservices:
+   - Node.js (Dealers): `ibmcloud ce app create --name dealers-service --image <your-icr-image> --port 3000`
+   - Flask (Sentiment): `ibmcloud ce app create --name sentiment-service --image <your-icr-image> --port 5000`
+   - Django (Main App): `ibmcloud ce app create --name django-app --image <your-icr-image> --port 8000`
+
+4. Configuration:
+   - Set environment variables in the Django app to point to the Node.js and Flask service URLs.
+
+5. Deployment URL Format:
+   The typical format for your deployed application will be:
+   https://django-app.1a2b3c4d5e.us-south.codeengine.appdomain.cloud
+
+(This URL should be saved in the 'deploymentURL' file)

@@ -1,0 +1,22 @@
+curl -X GET http://localhost:8000/djangoapp/get_cars
+
+[
+  {
+    "model": "Camry",
+    "make": "Toyota",
+    "year": 2023,
+    "type": "Sedan"
+  },
+  {
+    "model": "Civic",
+    "make": "Honda",
+    "year": 2023,
+    "type": "Sedan"
+  },
+  {
+    "model": "F-150",
+    "make": "Ford",
+    "year": 2023,
+    "type": "Truck"
+  }
+]

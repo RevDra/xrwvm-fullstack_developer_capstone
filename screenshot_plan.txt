@@ -1,0 +1,61 @@
+PHASE 4: The Screenshot Action Plan Checklist
+
+1. admin_login.png
+   - URL: http://localhost:8000/admin
+   - Action: Enter admin credentials and log in.
+   - Visible: The Django Admin dashboard with models like "Car Makes" and "Car Models".
+
+2. admin_logout.png
+   - URL: http://localhost:8000/admin/logout/
+   - Action: Click the "Log out" link in the admin panel.
+   - Visible: The "Logged out" confirmation page.
+
+3. get_dealers.png
+   - URL: http://localhost:8000/
+   - Action: Navigate to the landing page.
+   - Visible: List of dealerships displayed in a table or grid format.
+
+4. get_dealers_loggedin.png
+   - URL: http://localhost:8000/
+   - Action: Log in as a regular user.
+   - Visible: The landing page with the user's name appearing in the navigation bar.
+
+5. dealersbystate.png
+   - URL: http://localhost:8000/
+   - Action: Select "Kansas" from the state dropdown filter.
+   - Visible: Only dealerships located in Kansas are listed.
+
+6. dealer_id_reviews.png
+   - URL: http://localhost:8000/dealer/1 (example ID)
+   - Action: Click on a specific dealer to view details.
+   - Visible: The dealer's details and a list of existing reviews.
+
+7. dealership_review_submission.png
+   - URL: http://localhost:8000/postreview/1 (example ID)
+   - Action: Fill out the "Add Review" form but do NOT click submit yet.
+   - Visible: The completed form with review text and car details.
+
+8. added_review.png
+   - URL: http://localhost:8000/dealer/1
+   - Action: Submit the review and wait for the page to refresh.
+   - Visible: Your newly added review appearing at the top of the list with a sentiment icon.
+
+9. deployed_landingpage.png
+   - URL: https://django-app.<...>.codeengine.appdomain.cloud/
+   - Action: Navigate to the cloud-deployed URL.
+   - Visible: The live landing page on the public internet.
+
+10. deployed_loggedin.png
+    - URL: https://django-app.<...>.codeengine.appdomain.cloud/
+    - Action: Log in to the cloud-deployed application.
+    - Visible: The live landing page with the username in the navbar.
+
+11. deployed_dealer_detail.png
+    - URL: https://django-app.<...>.codeengine.appdomain.cloud/dealer/1
+    - Action: Click a dealer on the live site.
+    - Visible: Dealer details and reviews on the cloud-hosted environment.
+
+12. deployed_add_review.png
+    - URL: https://django-app.<...>.codeengine.appdomain.cloud/postreview/1
+    - Action: Open the "Add Review" page on the live site.
+    - Visible: The review submission form on the cloud environment.
