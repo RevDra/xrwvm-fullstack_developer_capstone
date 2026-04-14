@@ -1,4 +1,4 @@
-# Cars Dealership Capstone
+# fullstack_developer_capstone
 
 This is a comprehensive national car retailer web application built as part of the Capstone project. The platform allows users to browse car dealerships, read reviews, and post their own feedback.
 
